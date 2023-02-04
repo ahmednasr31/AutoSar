@@ -1,7 +1,7 @@
 
 
-typedef 	Dio_ChannelType  u32;
-typedef 	Dio_PortType	 u32;
+typedef 	  u32    Dio_ChannelType;
+typedef 	  u32 	 Dio_PortType;
 
 typedef struct 
 {
@@ -12,14 +12,14 @@ typedef struct
 }Dio_ChannelGroupType;
 
 
-typedef Dio_LevelType u8;
+typedef	  u8   Dio_LevelType ;
 
 
 #define 	STD_LOW  	0x00 
 #define 	STD_HIGH 	0x01 
 
 
-typedef 	Dio_PortLevelType  u16;
+typedef    u16    Dio_PortLevelType  ;
 
 
 typedef enum 
