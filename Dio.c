@@ -103,14 +103,17 @@ Dio_PortLevelType Dio_ReadChannelGroup( const Dio_ChannelGroupType* ChannelGroup
 		/*PORTA*/
 		case 0 : 
 		Local_u16Result =( (ChannelGroupIdPtr-offset)>> ((GPIOA->IDR)&(ChannelGroupIdPtr-> mask)) );
+			break;
 																							break;
 		/*PORTB*/                                                
 		case 1 :	
 		Local_u16Result =( (ChannelGroupIdPtr-offset)>> ((GPIOB->IDR)&(ChannelGroupIdPtr-> mask)) );
+			break;
 																							break;
 		/*PORTC*/
 		case 2 : 
 		Local_u16Result =( (ChannelGroupIdPtr-offset)>> ((GPIOC->IDR)&(ChannelGroupIdPtr-> mask)) );
+			break;
 																							break;
 		default: /* Det_ReportError(DIO_E_PARAM_INVALID_PORT_ID); */  break;
 		
